@@ -1,0 +1,25 @@
+ <!-- Footer -->
+ <div class="footer">
+    <div class="texto-fot">
+        <p>© 2023 Todos los derechos reservados.</p>
+    </div>
+    <div class="redes">
+        <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+        </ul>
+    </div>
+    <div class="footer-apis">
+        {% if exchange_rate %}
+            <p>Tasa de cambio del dólar: {{ exchange_rate }}</p>
+        {% else %}
+            <p>No se pudo obtener la tasa de cambio del dólar.</p>
+        {% endif %}
+        {% if weather_data %}
+        <p>Temperatura: {{ weather_data.temperature }}°C  <img src="http://openweathermap.org/img/w/{{ weather_data.icon }}.png" alt="Weather icon"></p>
+    
+    {% else %}
+        <p>No se pudo obtener el clima.</p>
+    {% endif %}
+    </div>
+</div>

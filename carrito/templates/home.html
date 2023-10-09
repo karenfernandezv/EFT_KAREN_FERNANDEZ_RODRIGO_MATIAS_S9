@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+	<!-- seccion de cada categoria -->
+	<div class="categorias-container">
+		<div class="titulo-categorias">
+			<h1 class="text-center mt-5">Categorías</h1>
+		</div>
+		<div class="wrapper">
+			<div class="box-categorias">
+				<div class="categorias-img"> 
+					<img class="img-categorias" src="{% static 'img/astral.jpg' %}" alt="">
+				</div>
+				<div class="title-categorias">
+					<button type="button" class="btn btn-warning btn-catg"><a class="btn-a" href="/astral">Ver cartas</a></button>
+				</div>
+			</div>
+
+			<div class="box-categorias">
+				<div class="categorias-img">
+					<img class="img-categorias" src="{% static 'img/crown.png' %}" alt="">
+
+				</div>
+				<div class="title-categorias">
+					<button type="button" class="btn btn-warning btn-catg"><a class="btn-a" href="/crown">Ver cartas</a></button>
+				</div>
+			</div>
+
+			<div class="box-categorias">
+				<div class="categorias-img">
+					<img class="img-categorias" src="{% static 'img/lost.jpg' %}" alt="">
+				</div>
+				<div class="title-categorias">
+					<button type="button" class="btn btn-warning btn-catg"><a class="btn-a" href="/lost">Ver cartas</a></button>
+				</div>
+			</div>
+
+			<div class="box-categorias">
+				<div class="categorias-img">
+					<img class="img-categorias" src="{% static 'img/evolving.jpeg' %}" alt="">
+				</div>
+				<div class="title-categorias">
+					<button type="button" class="btn btn-warning btn-catg"><a class="btn-a" href="/evolving">Ver cartas</a></button>
+				</div>
+			</div>
+
+			<div class="box-categorias">
+				<div class="categorias-img">
+					<img class="img-categorias" src="{% static 'img/fusion.jpg' %}" alt="">
+				</div>
+				<div class="title-categorias">
+					<button type="button" class="btn btn-warning btn-catg"><a class="btn-a" href="/fusion">Ver cartas</a></button>
+				</div>
+			</div>
+
+			<div class="box-categorias">
+				<div class="categorias-img">
+					<img class="img-categorias" src="{% static 'img/pokemongo.png' %}" alt="">
+				</div>
+				<div class="title-categorias">
+					<button type="button" class="btn btn-warning btn-catg"><a class="btn-a" href="/pokemonGo">Ver cartas</a></button>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

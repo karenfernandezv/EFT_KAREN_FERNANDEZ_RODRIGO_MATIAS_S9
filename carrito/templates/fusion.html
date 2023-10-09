@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="col-3 tabla-card">
+    {% include "carrito.html" %}
+</div>
+<div class="container-carts">
+   
+    {% for producto in productos %}
+            <div class="carts">
+                <img class="img-cart"src="{{producto.imagen.url}}" alt="{{producto.nombre}}">
+                <h5 class="card-title">{{producto.nombre}}</h5>
+                <p class="card-text">{{producto.categoria}}</p>
+                <p class="card-text">{{producto.precio}}</p>
+                <a href="{% url 'Add' producto.id %}" class="btn btn-warning">Agregar al carrito</a>
+            </div>
+    {% endfor %}
+        
+    
+</div>
+
+
+{% endblock %}
